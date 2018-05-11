@@ -79,9 +79,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <jvmArguments>--add-modules java.xml.bind,java.xml.ws</jvmArguments>
-                </configuration>
             </plugin>
         </plugins>
     </build>
