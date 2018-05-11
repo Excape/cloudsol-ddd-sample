@@ -79,6 +79,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <jvmArguments>--add-modules java.xml.bind,java.xml.ws</jvmArguments>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -160,6 +163,10 @@
             <artifactId>selenium-java</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
     </dependencies>
 
     <reporting>
